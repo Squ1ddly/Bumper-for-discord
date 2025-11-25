@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Bumper — Discord Bump Reminder Bot</title>
+  <!-- favicon / icon (upload bumper.png to the repo root) -->
+  <link rel="icon" href="bumper.png" />
+  <style>
+    :root {
+      --bg:#0f1724; --card:#111827; --accent:#5865F2; --muted:#9CA3AF; color:white;
+    }
+    *{box-sizing:border-box}
+    body{margin:0;font-family:Inter,system-ui,Segoe UI,Roboto,Arial;background:linear-gradient(180deg,var(--bg),#071022);color:var(--muted)}
+    .wrap{max-width:980px;margin:40px auto;padding:28px}
+    header{display:flex;gap:16px;align-items:center}
+    header img{width:88px;height:88px;border-radius:14px;object-fit:cover;box-shadow:0 6px 20px rgba(0,0,0,.6)}
+    h1{margin:0;font-size:28px;color:white}
+    p.lead{margin:6px 0 0;color:var(--muted)}
+    .card{margin-top:24px;background:var(--card);padding:22px;border-radius:12px;box-shadow:0 6px 30px rgba(2,6,23,.6)}
+    .btn{display:inline-block;background:var(--accent);color:white;padding:12px 20px;border-radius:10px;text-decoration:none;font-weight:600}
+    .features{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px;margin-top:18px}
+    .feat{background:#0b1220;padding:14px;border-radius:10px;color:#d1d5db}
+    footer{margin-top:22px;color:var(--muted);font-size:13px}
+    @media (max-width:520px){header{flex-direction:column;align-items:flex-start} header img{width:72px;height:72px}}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <!-- The image file should be uploaded to the repository root as "bumper.png" -->
+      <img src="bumper.png" alt="Bumper icon" />
+      <div>
+        <h1>Bumper</h1>
+        <p class="lead">Automatic Discord bump reminders — never miss a bump again.</p>
+      </div>
+    </header>
+
+    <div class="card">
+      <div style="display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap">
+        <div>
+          <h2 style="margin:0;color:white">Invite Bumper to your server</h2>
+          <p style="margin:6px 0 0;color:var(--muted)">Click the button to add Bumper with slash commands and permissions.</p>
+        </div>
+        <div>
+          <!-- INVITE LINK: inserted for you -->
+          <a class="btn" href="https://discord.com/oauth2/authorize?client_id=1440434380248973424&permissions=2147732480&response_type=code&redirect_uri=https%3A%2F%2Flocalhost%2F&integration_type=0&scope=bot+applications.commands" target="_blank" rel="noopener">Invite Bumper</a>
+        </div>
+      </div>
+
+      <div class="features" style="margin-top:18px">
+        <div class="feat"><strong>Multi-server</strong><div style="font-size:13px;color:#9CA3AF">Each server keeps its own settings</div></div>
+        <div class="feat"><strong>Auto reminders</strong><div style="font-size:13px;color:#9CA3AF">2h1m reminders + 5min follow-up ping</div></div>
+        <div class="feat"><strong>Role pings</strong><div style="font-size:13px;color:#9CA3AF">Pings your configured role so members see it</div></div>
+        <div class="feat"><strong>Persistent stats</strong><div style="font-size:13px;color:#9CA3AF">Total reminders saved across restarts</div></div>
+      </div>
+
+      <footer>
+        <p>Need a dashboard? Want per-server stats or more features? Contact the bot owner.</p>
+      </footer>
+    </div>
+  </div>
+</body>
+</html>
